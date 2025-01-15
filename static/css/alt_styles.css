@@ -1,0 +1,86 @@
+.apresentation {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5%;
+}
+
+.nav-links {
+    font-family: 'Courier New', Courier;
+    font-size: 20px;
+}
+
+span {
+    color: #2c476e;
+}
+
+#title {
+    font-size: 30px;
+    font-family: 'Courier New', Courier;
+}
+
+#title-footer {
+    font-family: 'Courier New', Courier;
+    margin: 20px;
+}
+
+#title2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Courier New', Courier;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Courier New', Courier;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Courier New', Courier;
+}
+
+img {
+    border-radius: 10px;
+    border: none;
+}
+
+#slide-section {
+    background-color: #212227;
+    margin: 10px;
+    border-radius: 15px;
+    border: solid 1px #2c476e;
+}
+
+#slide-section:hover {
+    transition: 3s;
+}
+
+/* Estilo para o slide da seção */
+.slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 0.5s ease-out;
+}
+
+.slide-in.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Scrollbar Personalizado */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    /* Cor do thumb */
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1F2937;
+    /* Cor do fundo */
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/alt_styles.css">
+</head>
+
+<body class="bg-black h-full">
+    <!-- Navbar -->
+    <header>
+        <nav class="bg-black p-9 shadow-md nav-bar">
+            <div class="max-w-9xl mx-auto flex justify-between items-center">
+                <div class="text-white">
+                    <a href="#" id="title" class="text-xl font-semibold">
+                        <span>Welcome,</span> I'm Victor
+                    </a>
+                </div>
+                <div class="nav-links hidden md:flex space-x-6">
+                    <a href="#about" class="text-white hover:text-gray-300 hover:underline"
+                        style="text-underline-offset: 10px; text-decoration-thickness: 1px;">About</a>
+                    <a href="#projects" class="text-white hover:text-gray-300 hover:underline"
+                        style="text-underline-offset: 10px; text-decoration-thickness: 1px;">Projects</a>
+                    <a href="#contact" class="text-white hover:text-gray-300 hover:underline"
+                        style="text-underline-offset: 10px; text-decoration-thickness: 1px;">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden text-white px-1 py-2 hidden flex items-center w-full h-auto">
+        <a href="#about" class="block py-2">About</a>
+        <a href="#projects" class="block py-2">Projects</a>
+        <a href="#contact" class="block py-2">Contact</a>
+    </div>
+
+    <!-- Main Section -->
+    <section class="container-apresentation h-screen" id="about">
+        <div class="max-w-7xl mx-auto p-2 flex flex-col justify-center items-center h-screen">
+            <h2 class="apresentation text-white text-center text-4xl font-semibold">
+                I am a Back-End Developer, Pentester,<br><span> and Bug Hunter</span>.
+            </h2>
+            <p class="text-white text-center font-mono">
+                I am passionate about Development, Hacking, and Computing. Currently, I am focused on creating innovative
+                solutions<br>
+                while identifying and fixing vulnerabilities in my creations, <br>always aiming to improve security and functionality.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="slide-section" class="slide-in text-white p-10 h-auto flex justify-center">
+        <div class="flex flex-col justify-center items-center h-full" id="projects">
+            <!-- Main Title Centered -->
+            <h2 class="text-2xl text-center mb-20" id="title2">My Projects</h2>
+
+            <!-- Container for Images and Text -->
+            <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 w-full" id="img-container">
+                <!-- "Achievement Book" Title Centered -->
+                <div class="flex flex-col text-center justify-center items-center w-full">
+                    <h3 class="text-2xl mb-6" id="project">Achievement Book</h3>
+                    <!-- Images -->
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex justify-center">
+                            <img src="/static/img/Read.png" alt="Project 1" class="w-full object-contain rounded-lg">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="/static/img/Painel.png" alt="Project 1" class="w-full h-auto object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Project Description -->
+                    <div class="about text-center mt-6 px-4">
+                        <p>Achievement Book is a project aimed at gamifying reading, where young people, when completing tasks
+                            such as<br>"Read 5 pages", unlock an achievement, motivating them to read more and unlock additional
+                            achievements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/static/js/slide.js"></script>
+</body>
+
+</html>
