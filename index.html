@@ -7,6 +7,16 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/alt_styles.css">
+    <style>
+        /* Adicionar CSS para o Mobile Menu */
+        #mobile-menu {
+            display: none;
+        }
+
+        .mobile-menu-open #mobile-menu {
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="bg-black h-full">
@@ -91,6 +101,16 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // JavaScript to toggle mobile menu visibility
+        const menuButton = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuButton.addEventListener("click", function () {
+            document.body.classList.toggle("mobile-menu-open");
+        });
+    </script>
 
     <script src="/static/js/slide.js"></script>
 </body>
